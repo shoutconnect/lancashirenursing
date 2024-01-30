@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function CardEvent({ item }) {
   return (
     <div
-      className={`group  hover:scale-95 my-transition relative bg-white flex flex-col items-center rounded-lg overflow-hidden shadow-xl 
+      className={`group z-40 hover:scale-95 my-transition relative bg-white flex flex-col items-center rounded-lg overflow-hidden shadow-xl 
     ${
       item.location === "Microsoft Teams"
         ? "shadow-blue-300/10"
@@ -28,7 +28,7 @@ export default function CardEvent({ item }) {
       />
       <div className="flex flex-col items-center p-6">
         {item.location === "Microsoft Teams" ? (
-          <div className="relative z-20 mb-6 -mt-11 flex items-center gap-2 h-10 w-auto px-6 bg-blue-100 rounded-sm">
+          <div className="relative z-20 mb-6 -mt-11 flex items-center gap-2 h-10 w-auto px-6 bg-blue-50 border border-blue-200/50 rounded-md">
             {" "}
             <ComputerDesktopIcon className="size-4 text-blue-600" />
             <p className="text-sm font-semibold text-blue-600">
@@ -37,7 +37,7 @@ export default function CardEvent({ item }) {
             </p>
           </div>
         ) : item.location === "Preston College" ? (
-          <div className="relative z-20 mb-6 -mt-11 flex items-center gap-2 h-10 w-auto px-6 bg-green-100 rounded-sm">
+          <div className="relative z-20 mb-6 -mt-11 flex items-center gap-2 h-10 w-auto px-6 bg-green-50 border border-green-200/50 rounded-md">
             {" "}
             <AcademicCapIcon className="size-4 text-green-600" />
             <p className="text-sm font-semibold text-green-600">

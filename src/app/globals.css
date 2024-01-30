@@ -36,10 +36,10 @@
   }
   p,
   input {
-    @apply font-sans text-zinc-500 leading-8;
+    @apply font-sans text-zinc-500 leading-8 font-medium;
   }
   ::selection {
-    @apply text-white bg-red-600;
+    @apply text-white bg-blue-600;
   }
   .margin-x {
     @apply px-4 md:px-6 mx-auto max-w-7xl lg:px-8;
