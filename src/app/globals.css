@@ -50,6 +50,11 @@
   .my-transition {
     @apply transition-all duration-300 ease-in-out;
   }
+  .curved-bottom {
+    /* Curved corners */
+    border-bottom-left-radius: 50% 30%;
+    border-bottom-right-radius: 50% 30%;
+}
 }
 
 *,
