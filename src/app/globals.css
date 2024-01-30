@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply bg-zinc-50;
+    @apply bg-white;
   }
   h1,
   h2,

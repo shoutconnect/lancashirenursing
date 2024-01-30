@@ -9,12 +9,12 @@ import Image from "next/image";
 export default function CardEvent({ item }) {
   return (
     <div
-      className={`group z-40 hover:scale-95 my-transition relative bg-white flex flex-col items-center rounded-lg overflow-hidden shadow-xl 
+      className={`group z-40 hover:scale-95 my-transition relative bg-white flex flex-col items-center rounded-lg overflow-hidden shadow-xl  border border-zinc-200/70
     ${
       item.location === "Microsoft Teams"
-        ? "shadow-blue-300/10"
+        ? "shadow-blue-300/5"
         : item.location === "Preston College"
-        ? "shadow-green-300/10"
+        ? "shadow-green-300/5"
         : "shadow-zinc-600/5"
     }
     `}
@@ -67,7 +67,7 @@ export default function CardEvent({ item }) {
       </div>
 
       <div
-        className={`w-full text-center ${
+        className={`w-full text-center border-t border-zinc-200/70 ${
           item.location === "Microsoft Teams"
             ? "bg-blue-100/40 group-hover:bg-blue-500 my-transition"
             : item.location === "Preston College"
