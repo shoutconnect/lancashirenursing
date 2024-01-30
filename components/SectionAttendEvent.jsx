@@ -3,7 +3,7 @@ import CardEvent from "./CardEvent";
 
 export default function SectionAttendEvent() {
   return (
-    <div className="bg-zinc-50">
+    <div className="bg-zinc-50" id="clinic-dates">
       <div className="margin-x margin-y flex flex-col items-center gap-10 text-center ">
         <div className="pb-16 flex flex-col items-center gap-10 text-center">
           <h2 className="max-sm:w-[70%]">
