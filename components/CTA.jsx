@@ -4,7 +4,7 @@ export default function CTA() {
   return (
     <div className="">
       <div className="relative margin-x margin-y flex flex-col items-center gap-10 ">
-        <div className="flex max-lg:flex-col lg:gap-10 bg-white/70 rounded-lg overflow-hidden border-[1px] border-zinc-200/50 shadow-xl shadow-zinc-100/50">
+        <div className="flex max-lg:flex-col lg:gap-10 bg-white/10 rounded-lg overflow-hidden border-[1px] border-zinc-200/50 shadow-xl shadow-zinc-100/50">
           <div className="flex flex-col gap-10 items-start p-20 max-xl:p-12 max-lg:p-16 max-sm:px-10 max-sm:py-14 max-lg:text-center max-lg:items-center">
             <h2 className="">
               Ready to start?
@@ -16,7 +16,7 @@ export default function CTA() {
               Are you interested in a career in nursing? To register your place,
               please e-mail{" "}
               <a
-                className="text-blue-600 font-bold"
+                className="text-cyan-500 font-bold"
                 href="mailto:study.nursing@lthtr.nhs.uk?subject=Nursing Career Clinic&body=Hello, I would like to register a place at the Nursing Career Clinic."
               >
                 study.nursing@lthtr.nhs.uk{" "}
@@ -44,8 +44,9 @@ export default function CTA() {
               src="/Hero Background.png"
               width={1920}
               height={1080}
-              className="object-cover w-auto h-full lg:mt-20 rounded-tl-lg"
+              className="relative z-10 object-cover w-auto h-full lg:mt-20 rounded-tl-3xl opacity-70"
             />
+            <div className="absolute top-0 right-0 lg:mt-20 bg-cyan-500 w-full h-full rounded-tl-3xl" />
           </div>
         </div>
       </div>

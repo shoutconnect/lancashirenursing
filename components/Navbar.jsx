@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <navbar className="">
-      <div className=" ">
+      <div className="bg-white/70">
         <div className="margin-x py-4 flex items-center justify-between">
           <Image
             src="/Lancashire Teaching Hospitals.png"
@@ -15,7 +15,10 @@ export default function Navbar() {
           />
           <div className="flex items-center gap-4">
             <Link href="#clinic-dates">
-              <p className="font-semibold text-sm"> Clinics dates</p>
+              <p className="font-semibold text-sm hover:underline my-transition">
+                {" "}
+                Clinics dates
+              </p>
             </Link>
             <a
               href="mailto:study.nursing@lthtr.nhs.uk?subject=Nursing Career Clinic&body=Hello, I would like to register a place at the Nursing Career Clinic."

@@ -1,4 +1,5 @@
 import { CheckIcon, CheckCircleIcon } from "@heroicons/react/20/solid";
+import Image from "next/image";
 
 export default function Features() {
   const includedFeatures = [
@@ -15,9 +16,12 @@ export default function Features() {
 
   return (
     <div className="margin-x margin-y">
-      <div className="rounded-3xl ring-1 ring-zinc-200 lg:flex lg:max-w-none">
+      <div className="rounded-3xl ring-1 ring-zinc-200 lg:flex lg:max-w-none bg-white/30">
         <div className="p-8 sm:p-10 lg:flex-auto">
-          <h3 className="text-blue-600">Want a career in healthcare?</h3>
+          <h2 className="text-blue-600">
+            Do you want to start a <br className="max-xl:hidden" /> career in
+            healthcare?
+          </h2>
           <p className="mt-6">
             But still not sure if you would like the hospital environment? Or
             doy you want to make an informed choice? Join us for a{" "}
@@ -45,15 +49,26 @@ export default function Features() {
           </ul>
         </div>
         <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-          <div className="rounded-2xl bg-zinc-50 p-10 text-center ring-1 ring-inset ring-zinc-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
-            <h5 className="flex-none ">
+          <div className="rounded-2xl bg-zinc-50 p-10 text-center ring-1 ring-inset ring-zinc-900/5 lg:flex lg:flex-col lg:justify-center">
+            <div className="relative rounded-lg overflow-hidden">
+              <Image
+                src="/Hero Background.png"
+                width={700}
+                height={700}
+                className=" relative z-10 opacity-70 scale-x-110 w-full h-[200px] object-cover object-top"
+                draggable={false}
+                alt="NHS Lancashire Teaching Hospitals"
+              />
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-teal-600 via-cyan-500 to-blue-600" />
+            </div>
+            <h5 className="flex-none mt-8">
               Attend a weekend session to experience some:
             </h5>{" "}
             <ul role="list" className="mt-8 grid grid-cols-1 gap-4">
               {secondIncludedFeatures.map((feature) => (
                 <li key={feature} className="flex gap-x-3">
                   <CheckCircleIcon
-                    className="h-6 w-5 flex-none text-blue-600 mt-1"
+                    className="h-6 w-5 flex-none text-cyan-500 mt-1"
                     aria-hidden="true"
                   />
                   <p>{feature}</p>

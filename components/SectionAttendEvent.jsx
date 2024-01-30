@@ -16,7 +16,6 @@ export default function SectionAttendEvent() {
             hosting Nursing Career Clinics to give you the opportunity to find
             out more about the different nursing roles available at NHS
             Lancashire Teaching Hospitals. <br />
-            <br />
             <span className="text-blue-600 font-bold">
               {" "}
               Check below for the dates and times of our upcoming Nursing Career

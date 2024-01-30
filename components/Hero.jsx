@@ -12,7 +12,7 @@ export default function Hero() {
           src="/NHS (1).png"
           width={1920}
           height={1080}
-          className="absolute top-0 left-0 object-cover w-full h-full object-top opacity-80"
+          className="absolute top-0 left-0 object-cover w-full h-full opacity-80 "
         />
 
         <section className="relative z-[30] flex max-lg:flex-col max-lg:items-center  lg:gap-20 margin-x">
