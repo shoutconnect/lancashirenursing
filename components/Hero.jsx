@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
-import Navbar from "./Navbar";
 
 export default function Hero() {
   return (
