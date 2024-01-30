@@ -38,6 +38,9 @@ export default function CTA() {
               width={200}
               height={50}
               className="absolute bottom-8 right-8 z-[30] object-cover h-32 max-sm:h-24 w-auto"
+              priority
+              draggable={false}
+              alt="Lancashire Teaching Hospitals"
             />
             <div className="absolute z-[20] w-full h-full bg-gradient-to-tl from-zinc-50 via-zinc-50/40 to-transparent" />
             <Image
@@ -45,6 +48,9 @@ export default function CTA() {
               width={1920}
               height={1080}
               className="relative z-10 object-cover w-auto h-full lg:mt-20 rounded-tl-3xl opacity-70"
+              priority
+              draggable={false}
+              alt="NHS background"
             />
             <div className="absolute top-0 right-0 lg:mt-20 bg-cyan-500 w-full h-full rounded-tl-3xl" />
           </div>
