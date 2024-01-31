@@ -12,6 +12,7 @@ export default function Navbar() {
             height={80}
             draggable={false}
             className="object-cover h-12 max-sm:h-8 w-auto"
+            alt="NHS Lancashire Teaching Hospital"
           />
           <div className="flex items-center gap-6">
             <Link href="#clinic-dates">

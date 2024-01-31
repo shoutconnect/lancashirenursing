@@ -25,6 +25,7 @@ export default function CardEvent({ item }) {
         height={100}
         className="w-full h-56 object-cover curved-bottom group-hover:scale-105 my-transition"
         draggable={false}
+        alt="Nursing Career Clinic"
       />
       <div className="flex flex-col items-center p-6">
         {item.location === "Microsoft Teams" ? (

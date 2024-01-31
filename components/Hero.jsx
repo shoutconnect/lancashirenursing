@@ -40,8 +40,8 @@ export default function Hero() {
           <div className="w-[900px] max-xl:w-[700px] max-lg:w-[60%] max-md:w-[100%] max-lg:-mt-10 lg:absolute lg:z-[50] lg:bottom-0 lg:right-0">
             <Image
               src="/NHS (2).png"
-              width={1000}
-              height={1000}
+              width={900}
+              height={500}
               className="object-cover select-none "
               draggable={false}
               alt="NHS background"

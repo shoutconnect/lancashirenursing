@@ -4,8 +4,8 @@ export default function CTA() {
   return (
     <div className="">
       <div className="relative margin-x margin-y flex flex-col items-center gap-10 ">
-        <div className="flex max-lg:flex-col lg:gap-10 bg-white/10 rounded-lg overflow-hidden border-[1px] border-zinc-200/50 shadow-xl shadow-zinc-100/50">
-          <div className="flex flex-col gap-10 items-start p-20 max-xl:p-12 max-lg:p-16 max-sm:px-10 max-sm:py-14 max-lg:text-center max-lg:items-center">
+        <div className="flex max-lg:flex-col lg:gap-10 bg-white/30 rounded-lg overflow-hidden border-[1px] border-zinc-200/50 shadow-xl shadow-zinc-100/50">
+          <div className="w-3/5 max-lg:w-full flex flex-col gap-10 items-start p-20 max-xl:p-12 max-lg:p-16 max-sm:px-10 max-sm:py-14 max-lg:text-center max-lg:items-center">
             <h2 className="">
               Ready to start?
               <br />
@@ -33,11 +33,11 @@ export default function CTA() {
               Register now
             </a>
           </div>
-          <div className="relative">
+          <div className="w-2/5 max-lg:w-full relative">
             <Image
               src="/Lancashire Teaching Hospitals.png"
-              width={200}
-              height={50}
+              width={230}
+              height={125}
               className="absolute bottom-8 right-8 z-[30] object-cover h-32 max-sm:h-24 w-auto"
               priority
               draggable={false}
@@ -47,7 +47,7 @@ export default function CTA() {
             <Image
               src="/Hero Background.png"
               width={1920}
-              height={1080}
+              height={550}
               className="relative z-10 object-cover w-auto h-full lg:mt-20 rounded-tl-3xl opacity-70"
               priority
               draggable={false}

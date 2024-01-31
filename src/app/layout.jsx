@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar";
 import "./globals.css";
 
 export const metadata = {
-  title: "Lancashire Nursing",
+  title: "Lancashire Nursing Clinics",
   description: "Do you want to be a nurse? We can help you get there!",
 };
 
