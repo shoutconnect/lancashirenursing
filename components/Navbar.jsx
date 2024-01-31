@@ -13,11 +13,11 @@ export default function Navbar() {
             draggable={false}
             className="object-cover h-12 w-auto"
           />
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-6">
             <Link href="#clinic-dates">
               <p className="font-semibold text-sm hover:underline my-transition">
                 {" "}
-                Clinics dates
+                Clinics
               </p>
             </Link>
             <a

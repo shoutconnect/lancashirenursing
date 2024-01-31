@@ -12,9 +12,9 @@ export default function SectionAttendEvent() {
             <span className="text-blue-600"> Nursing Career Clinic </span>
           </h2>
           <p className="w-[80%]">
-            Are you interested in learn more about a career in nursing? We are
-            hosting Nursing Career Clinics to give you the opportunity to find
-            out more about the different nursing roles available at NHS
+            Are you interested in learning more about a career in nursing? We
+            are hosting Nursing Career Clinics to give you the opportunity to
+            find out more about the different nursing roles available at NHS
             Lancashire Teaching Hospitals. <br />
             <span className="text-blue-600 font-bold">
               {" "}

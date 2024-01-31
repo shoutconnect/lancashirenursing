@@ -5,7 +5,7 @@ export default function Features() {
   const includedFeatures = [
     "Chat to our clinical nurse tutors",
     "Explore our different learning environments ",
-    "Find out more about how to develop your career",
+    "Find out more about career development",
     "Gain support to take the next steps",
   ];
   const secondIncludedFeatures = [
@@ -23,8 +23,8 @@ export default function Features() {
             healthcare?
           </h2>
           <p className="mt-6">
-            But still not sure if you would like the hospital environment? Or
-            doy you want to make an informed choice? Join us for a{" "}
+            But still not sure if the hospital environment is for you? Or you
+            need more information to make an informed choice? Join us for a{" "}
             <span className="font-bold text-zinc-700">
               {" "}
               Nursing Career Clinic

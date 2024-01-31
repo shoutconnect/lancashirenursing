@@ -9,12 +9,12 @@ export default function CTA() {
             <h2 className="">
               Ready to start?
               <br />
-              <span className="text-blue-600">Register today your place.</span>
+              <span className="text-blue-600">Book your place today.</span>
             </h2>
             <p className="">
               {" "}
-              Are you interested in a career in nursing? To register your place,
-              please e-mail{" "}
+              Are you ready to find out more about a career in nursing? To
+              register your place at a Nursing Career Clinic, please e-mail
               <a
                 className="text-cyan-500 font-bold"
                 href="mailto:study.nursing@lthtr.nhs.uk?subject=Nursing Career Clinic&body=Hello, I would like to register a place at the Nursing Career Clinic."

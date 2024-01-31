@@ -14,7 +14,7 @@ export default function Footer() {
           Trust
         </p>
         <p className="text-sm">
-          Wesbite developed by the team of{" "}
+          Wesbite developed by{" "}
           <Link
             href="www.shoutconnect.co.uk"
             target="blank_"
