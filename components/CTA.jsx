@@ -19,6 +19,7 @@ export default function CTA() {
                 className="text-cyan-500 font-bold"
                 href="mailto:study.nursing@lthtr.nhs.uk?subject=Nursing Career Clinic&body=Hello, I would like to register a place at the Nursing Career Clinic."
               >
+                {" "}
                 study.nursing@lthtr.nhs.uk{" "}
               </a>
               with your preferred date and a member of the team will be in touch
