@@ -3,6 +3,9 @@ import {
   RiFacebookBoxFill,
   RiInstagramFill,
   RiLinkedinBoxFill,
+  RiTwitterXFill,
+  RiXboxFill,
+  RiYoutubeFill,
 } from "react-icons/ri";
 
 export default function Footer() {
@@ -16,7 +19,7 @@ export default function Footer() {
         <p className="text-sm">
           Wesbite developed by{" "}
           <Link
-            href="www.shoutconnect.co.uk"
+            href="http://www.shoutconnect.co.uk"
             target="blank_"
             className="font-bold"
           >
@@ -31,9 +34,23 @@ export default function Footer() {
       <div className="flex flex-col items-end gap-2">
         <p>Connect with us:</p>
         <div className="flex items-center gap-2 justify-center">
-          <RiLinkedinBoxFill className="size-8 text-blue-800 hover:text-blue-600 my-transition" />
-          <RiFacebookBoxFill className="size-8 text-blue-800 hover:text-blue-600 my-transition" />
-          <RiInstagramFill className="size-8 text-blue-800 hover:text-blue-600 my-transition" />
+          <Link href="https://www.facebook.com/LancsHospitals/" target="blank_">
+            <RiFacebookBoxFill className="size-6 text-blue-800 hover:text-blue-600 my-transition" />{" "}
+          </Link>
+          <Link
+            href="https://www.instagram.com/lancshospitals/"
+            target="blank_"
+          >
+            <RiInstagramFill className="size-6 text-blue-800 hover:text-blue-600 my-transition" />
+          </Link>
+
+          <Link href="https://www.youtube.com/user/LTHNHSFT" target="blank_">
+            <RiYoutubeFill className="size-6 text-blue-800 hover:text-blue-600 my-transition" />{" "}
+          </Link>
+
+          <Link href="https://twitter.com/LancsHospitals" target="blank_">
+            <RiTwitterXFill className="size-6 text-blue-800 hover:text-blue-600 my-transition" />
+          </Link>
         </div>
       </div>
     </footer>
