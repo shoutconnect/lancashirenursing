@@ -7,11 +7,11 @@ export default function Navbar() {
       <div className="bg-white/70">
         <div className="margin-x py-4 flex items-center justify-between">
           <Image
-            src="/Lancashire Teaching Hospitals.png"
+            src="/NHS Lancashire Teaching Hospital.svg"
             width={160}
             height={80}
             draggable={false}
-            className="object-cover h-12 w-auto"
+            className="object-cover h-12 max-sm:h-8 w-auto"
           />
           <div className="flex items-center gap-6">
             <Link href="#clinic-dates">
