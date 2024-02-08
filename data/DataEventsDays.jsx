@@ -1,11 +1,5 @@
 const DataEVentsDays = [
   {
-    day: "6th February",
-    time: "13:00-15:00",
-    location: "Microsoft Teams",
-    image: "/1.png",
-  },
-  {
     day: "27th February",
     time: "11:30-13:30",
     location: "Preston College",
@@ -26,6 +20,12 @@ const DataEVentsDays = [
   {
     day: "8th April",
     time: "13:00-15:00",
+    location: "Microsoft Teams",
+    image: "/2.png",
+  },
+  {
+    day: "26th April",
+    time: "09:00-11:00",
     location: "Microsoft Teams",
     image: "/2.png",
   },
