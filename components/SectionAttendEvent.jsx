@@ -2,6 +2,13 @@ import DataEVentsDays from "../data/DataEventsDays";
 import CardEvent from "./CardEvent";
 
 export default function SectionAttendEvent() {
+  const today = new Date();
+
+  const upcomingEvents = DataEVentsDays.filter((item) => {
+    const eventDate = new Date(item.date);
+    return eventDate >= today;
+  });
+
   return (
     <div className="bg-zinc-50" id="clinic-dates">
       <div className="margin-x margin-y flex flex-col items-center gap-10 text-center ">
@@ -24,7 +31,7 @@ export default function SectionAttendEvent() {
           </p>
         </div>
         <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-10">
-          {DataEVentsDays.map((item, i) => {
+          {upcomingEvents.slice(0, 6).map((item, i) => {
             return <CardEvent key={i} item={item} />;
           })}
         </div>
