@@ -1,4 +1,4 @@
-const DataEVentsDays = [
+const DataEventsDays = [
   {
     day: "6th February",
     date: "2024-02-06",
@@ -155,4 +155,4 @@ const DataEVentsDays = [
   },
 ];
 
-export default DataEVentsDays;
+export default DataEventsDays;
