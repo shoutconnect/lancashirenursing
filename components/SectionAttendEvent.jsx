@@ -3,10 +3,12 @@ import CardEvent from "./CardEvent";
 
 export default function SectionAttendEvent() {
   const today = new Date();
+  const formattedToday = today.toISOString().slice(0, 10);
+  const todayDate = new Date(formattedToday);
 
   const upcomingEvents = DataEventsDays.filter((item) => {
     const eventDate = new Date(item.date);
-    return eventDate >= today;
+    return eventDate >= todayDate;
   });
 
   return (
