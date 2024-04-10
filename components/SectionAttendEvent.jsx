@@ -1,15 +1,25 @@
+"use client";
+import { useEffect, useState } from "react";
 import DataEventsDays from "../data/DataEventsDays";
 import CardEvent from "./CardEvent";
 
 export default function SectionAttendEvent() {
-  const today = new Date();
-  const formattedToday = today.toISOString().slice(0, 10);
-  const todayDate = new Date(formattedToday);
+  const [upcomingEvents, setUpcomingEvents] = useState([]);
 
-  const upcomingEvents = DataEventsDays.filter((item) => {
-    const eventDate = new Date(item.date);
-    return eventDate >= todayDate;
-  });
+  useEffect(() => {
+    const today = new Date();
+    const formattedToday = today.toISOString().slice(0, 10);
+    const todayDate = new Date(formattedToday);
+
+    // Filter the events directly from the imported data
+    const filteredEvents = DataEventsDays.filter((item) => {
+      const eventDate = new Date(item.date);
+      return eventDate >= todayDate;
+    });
+
+    // Update the state with the filtered events
+    setUpcomingEvents(filteredEvents);
+  }, []);
 
   return (
     <div className="bg-zinc-50" id="clinic-dates">
