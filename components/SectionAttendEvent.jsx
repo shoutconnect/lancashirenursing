@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import DataEventsDays from "../data/DataEventsDays";
 import CardEvent from "./CardEvent";
+import Image from "next/image";
 
 export default function SectionAttendEvent() {
   const [upcomingEvents, setUpcomingEvents] = useState([]);
@@ -42,7 +43,16 @@ export default function SectionAttendEvent() {
             </span>
           </p>
         </div>
-        <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-10">
+        <div className="w-full">
+          <Image
+            src="/Join us on our open day!.png"
+            alt="Join us on our open day!"
+            width={1300}
+            height={600}
+            className="w-full h-auto rounded-lg object-cover mb-10 border border-zinc-200/70"
+          />
+        </div>
+        <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-10 w-full">
           {upcomingEvents.slice(0, 6).map((item, i) => {
             return <CardEvent key={i} item={item} />;
           })}
