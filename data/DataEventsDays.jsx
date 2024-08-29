@@ -147,6 +147,13 @@ const DataEventsDays = [
     image: "/Preston College.png",
   },
   {
+    day: "10th December",
+    date: "2024-12-10",
+    time: "15:30-18:30",
+    location: "Education Centre 1 (Preston)",
+    image: "/Education-centre.jpg",
+  },
+  {
     day: "18th December",
     date: "2024-12-18",
     time: "09:00-11:00",
